@@ -1,0 +1,65 @@
+* {
+  background: url(https://source.unsplash.com/1600x900/?game,action);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 0;
+  margin: 0;
+}
+.container {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+}
+.grid {
+  display: flex;
+
+  flex-wrap: wrap;
+  height: 300px;
+  width: 400px;
+}
+.unclickable {
+  pointer-events: none;
+}
+p{
+    font-size: 30px;
+    font-weight: 800;
+    background: transparent;
+}
+.heading {
+  color: white;
+  font-family: sans-serif;
+  padding: 1rem 2rem;
+  margin-bottom: 1rem;
+  background: black;
+  opacity: 0.7;
+  border-radius: 10px;
+}
+
+@media (max-width: 720px) {
+  * {
+    padding: 0;
+    margin: 0;
+    background: url(https://source.unsplash.com/900x900/?game,action);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  p{
+    font-size: 24px;
+    font-weight: 800;
+    background: transparent;
+}
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    height: 240px;
+    width: 320px;
+  }
+img{
+    width: 80px;
+    height: 80px;
+}
+
+}
